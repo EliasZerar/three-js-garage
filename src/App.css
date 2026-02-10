@@ -1,0 +1,13 @@
+.canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: pink;
+}
+.fake-button{
+    background-color: red;
+    padding: 1rem;
+    border-radius: 1rem;
+}
