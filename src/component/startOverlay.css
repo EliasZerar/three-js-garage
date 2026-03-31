@@ -1,0 +1,113 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    transition: opacity 0.6s ease;
+}
+
+.overlay.fade-out {
+    opacity: 0;
+}
+
+.overlay-card {
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 2.5rem 3rem;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(100, 160, 255, 0.08);
+    color: #ccc;
+    font-family: 'Courier New', monospace;
+}
+
+.overlay-lore {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+.overlay-lore-sub {
+    display: block;
+    margin-top: 0.6rem;
+    color: #6af;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.overlay-divider {
+    width: 60px;
+    height: 1px;
+    background: #333;
+    margin: 1.4rem auto;
+}
+
+.overlay-controls {
+    margin-bottom: 1.5rem;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+kbd {
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-bottom: 3px solid #333;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+    color: #eee;
+    font-family: monospace;
+    min-width: 32px;
+}
+
+.overlay-controls-label {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 6px;
+}
+
+.overlay-mouse {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 8px;
+}
+
+.overlay-btn {
+    background: transparent;
+    border: 1px solid #6af;
+    color: #6af;
+    padding: 0.7rem 1.8rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-bottom: 0.8rem;
+}
+
+.overlay-btn:hover {
+    background: #6af;
+    color: #000;
+}
+
+.overlay-hint {
+    font-size: 0.75rem;
+    color: #444;
+}
+
+.overlay-hint kbd {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+}
